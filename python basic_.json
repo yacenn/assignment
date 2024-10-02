@@ -1,0 +1,849 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "1+1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 1,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "2"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "cell_type": "code",
+      "source": "g = 2+7j\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 2
+    },
+    {
+      "cell_type": "code",
+      "source": "g+6j",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 4,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "(2+13j)"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 4
+    },
+    {
+      "cell_type": "code",
+      "source": "g.real\n\n\n\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 5,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "2.0"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 5
+    },
+    {
+      "cell_type": "code",
+      "source": "g.imag",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 7,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "7.0"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 7
+    },
+    {
+      "cell_type": "code",
+      "source": "d=\"dewfe\"",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 10
+    },
+    {
+      "cell_type": "code",
+      "source": "d[2]\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 11,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'w'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 11
+    },
+    {
+      "cell_type": "code",
+      "source": "d[-2]",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 12,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'f'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 12
+    },
+    {
+      "cell_type": "code",
+      "source": "d[0:3]",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 13,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'dew'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 13
+    },
+    {
+      "cell_type": "code",
+      "source": "   d[0:5:2]\n\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 15,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'dwe'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 15
+    },
+    {
+      "cell_type": "code",
+      "source": "s1 = \"this is my string class\"\n\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 16
+    },
+    {
+      "cell_type": "code",
+      "source": "s1.find('s')",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 17,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "3"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 17
+    },
+    {
+      "cell_type": "code",
+      "source": "l =[1, 345, 'sudh', True, (5+7j), 345.456]   \n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 35
+    },
+    {
+      "cell_type": "code",
+      "source": "1+1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 23,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "2"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 23
+    },
+    {
+      "cell_type": "code",
+      "source": "1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 24,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "1"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 24
+    },
+    {
+      "cell_type": "code",
+      "source": "1\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 26,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "1"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 26
+    },
+    {
+      "cell_type": "code",
+      "source": "1 = 22",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "ename": "<class 'SyntaxError'>",
+          "evalue": "cannot assign to literal here. Maybe you meant '==' instead of '='? (<ipython-input-27-cc12dc859e92>, line 1)",
+          "traceback": [
+            "\u001b[0;36m  Cell \u001b[0;32mIn[27], line 1\u001b[0;36m\u001b[0m\n\u001b[0;31m    1 = 22\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m cannot assign to literal here. Maybe you meant '==' instead of '='?\n"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "execution_count": 27
+    },
+    {
+      "cell_type": "code",
+      "source": "s = sdw",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "ename": "<class 'NameError'>",
+          "evalue": "name 'sdw' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "Cell \u001b[0;32mIn[28], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m s \u001b[38;5;241m=\u001b[39m \u001b[43msdw\u001b[49m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'sdw' is not defined"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "execution_count": 28
+    },
+    {
+      "cell_type": "code",
+      "source": "s = 11",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 29
+    },
+    {
+      "cell_type": "code",
+      "source": "s",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 30,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "11"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 30
+    },
+    {
+      "cell_type": "code",
+      "source": "I",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 33,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456]"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 33
+    },
+    {
+      "cell_type": "code",
+      "source": "l",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 36,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456]"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 36
+    },
+    {
+      "cell_type": "code",
+      "source": "l[3][0:2]",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "ename": "<class 'TypeError'>",
+          "evalue": "'bool' object is not subscriptable",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "Cell \u001b[0;32mIn[37], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ml\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m3\u001b[39;49m\u001b[43m]\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m0\u001b[39;49m\u001b[43m:\u001b[49m\u001b[38;5;241;43m2\u001b[39;49m\u001b[43m]\u001b[49m\n",
+            "\u001b[0;31mTypeError\u001b[0m: 'bool' object is not subscriptable"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "execution_count": 37
+    },
+    {
+      "cell_type": "code",
+      "source": "r=[5, 8]",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 38
+    },
+    {
+      "cell_type": "code",
+      "source": "l+r",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 39,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456, 5, 8]"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 39
+    },
+    {
+      "cell_type": "markdown",
+      "source": "len(l)",
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": "len(l)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 40,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "6"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 40
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "cell_type": "code",
+      "source": "l.append(5)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 43
+    },
+    {
+      "cell_type": "code",
+      "source": "l",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 44,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456, 5, 5, 5]"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 44
+    },
+    {
+      "cell_type": "code",
+      "source": "l.append(4)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 48
+    },
+    {
+      "cell_type": "code",
+      "source": "l",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 49,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456, 5, 5, 5, 4, 4, 4, 4]"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 49
+    },
+    {
+      "cell_type": "code",
+      "source": "l.remove(4)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 50
+    },
+    {
+      "cell_type": "code",
+      "source": "l",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 51,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456, 5, 5, 5, 4, 4, 4]"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 51
+    },
+    {
+      "cell_type": "code",
+      "source": "l[-1][1]",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "ename": "<class 'TypeError'>",
+          "evalue": "'int' object is not subscriptable",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "Cell \u001b[0;32mIn[53], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ml\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m-\u001b[39;49m\u001b[38;5;241;43m1\u001b[39;49m\u001b[43m]\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m1\u001b[39;49m\u001b[43m]\u001b[49m\n",
+            "\u001b[0;31mTypeError\u001b[0m: 'int' object is not subscriptable"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "execution_count": 53
+    },
+    {
+      "cell_type": "code",
+      "source": "l.append(r)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 55
+    },
+    {
+      "cell_type": "code",
+      "source": "l",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 56,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456, 5, 5, 5, 4, 4, 4, [5, 8], [5, 8]]"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 56
+    },
+    {
+      "cell_type": "code",
+      "source": "l[-1][1]",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 57,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "8"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 57
+    },
+    {
+      "cell_type": "code",
+      "source": "l.extend(\"q\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 58
+    },
+    {
+      "cell_type": "code",
+      "source": "l",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 59,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456, 5, 5, 5, 4, 4, 4, [5, 8], [5, 8], 'q']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 59
+    },
+    {
+      "cell_type": "code",
+      "source": "l.pop(-2)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 60,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[5, 8]"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 60
+    },
+    {
+      "cell_type": "code",
+      "source": "l",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 61,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456, 5, 5, 5, 4, 4, 4, [5, 8], 'q']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 61
+    },
+    {
+      "cell_type": "code",
+      "source": "l.remove(5)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 72
+    },
+    {
+      "cell_type": "code",
+      "source": "l",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 73,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[1, 345, 'sudh', True, (5+7j), 345.456, 'q']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 73
+    },
+    {
+      "cell_type": "code",
+      "source": "a = \"sudh\"",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 74
+    },
+    {
+      "cell_type": "code",
+      "source": "a.replace('s', 'a')",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 76,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'audh'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 76
+    },
+    {
+      "cell_type": "code",
+      "source": "s1 = {}",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 77
+    },
+    {
+      "cell_type": "code",
+      "source": "type(s1)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 78,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "dict"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 78
+    },
+    {
+      "cell_type": "code",
+      "source": "d = {234 : \"@sudh\", \"ss\" : 11, ww : 11}",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "ename": "<class 'NameError'>",
+          "evalue": "name 'ww' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "Cell \u001b[0;32mIn[86], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m d \u001b[38;5;241m=\u001b[39m {\u001b[38;5;241m234\u001b[39m : \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m@sudh\u001b[39m\u001b[38;5;124m\"\u001b[39m, \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mss\u001b[39m\u001b[38;5;124m\"\u001b[39m : \u001b[38;5;241m11\u001b[39m, \u001b[43mww\u001b[49m : \u001b[38;5;241m11\u001b[39m}\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'ww' is not defined"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "execution_count": 86
+    },
+    {
+      "cell_type": "code",
+      "source": "d",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 85,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "{234: '@sudh', 'ss': 11}"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 85
+    },
+    {
+      "cell_type": "code",
+      "source": "  l = [\"sudh\", \"kumar\", \"pwskills\", \"course\"]",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 87
+    },
+    {
+      "cell_type": "code",
+      "source": "l1 = []\nfor i in l:\n    print(i)\n    l1.append(i + \"s\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "sudh\nkumar\npwskills\ncourse\n",
+          "output_type": "stream"
+        }
+      ],
+      "execution_count": 97
+    },
+    {
+      "cell_type": "code",
+      "source": "l1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 98,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['sudhs', 'kumars', 'pwskillss', 'courses']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 98
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
